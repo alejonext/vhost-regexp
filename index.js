@@ -11,7 +11,7 @@ module.exports = function vhost(hostname, server, opts){
 		var host = regexp.exec(req.headers.host.split(':')[0]);
 		if (!host) return next();
 		kel.forEach(function (key, i){
-			req.keys[ key.name ] = host[ i + 1 ] ;
+			req.vhost[ key.name ] = host[ i + 1 ] ;
 		});
 		if ('function' == typeof server) return server(req, res, next);
 		server.emit('request', req, res);
