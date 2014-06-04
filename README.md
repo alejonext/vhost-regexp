@@ -2,13 +2,13 @@
 
 Install
 
-´´´console
+``console
 $ npm install vhost-regexp
-´´´
+``
 
 ## Use
 
-´´´javascript
+``javascript
 var connect = require('connect');
 var vhost = require('vhost');
 
@@ -26,4 +26,4 @@ app.use(vhost('([a-z0-9]{5,15}).example.com', connect()));
 // abcdef1234567890.example.com
 app.use(vhost('*.example.com', connect()));
 app.use(connect());
-´´´
+``
