@@ -1,0 +1,24 @@
+{
+	"name": "vhost-regexp",
+	"version": "0.0.5",
+	"description": "Ha configuration a vhost with Regular Expression in the hostname",
+	"main": "./index.js",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:alejonext/vhost-regexp.git"
+	},
+	"dependencies": {
+		"path-to-regexp": ">=0.1.2"
+	},
+	"devDependencies": {
+		"mocha": "*"
+	},
+	"keywords": [
+		"virtualhost",
+		"vhost",
+		"regexp",
+		"regexp"
+	],
+	"author": "Alejo Next <alejonext@gmail.com>",
+	"license": "Apache-2.0"
+}
